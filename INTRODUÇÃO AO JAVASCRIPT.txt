@@ -1,0 +1,48 @@
+INTRODUÇÃO AO JAVASCRIPT
+
+Para importar um Javascript pro html:
+<script src="assets/js/scripts.js"></script>
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/scripts.js"></script>
+
+    <title>teste</title>
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    
+</body>
+</html>
+
+Javascript: 
+console.log("hello world");
+
+Css:
+body {
+    color: gray;
+}
+
+
+Como manipular um arquivo html pelo Javascript:
+Abrir a página clicando no arquivo html >ctrl+shift+i para inspecionar elemento
+>abrir a aba console> e digitar os seguintes comandos:
+
+document.getElementsByTagName( 'h1' )
+HTMLCollection [h1]0: h1length: 1[[Prototype]]: HTMLCollection
+    var heading1 = document.getElementsByTagName( 'h1' )[0]
+undefined
+heading1
+<h1>​Olá mundo​</h1>​
+heading1.style.color = 'red'
+'red'
+*isso fará com que a palavra "Olá mundo" do HTML fique vermelha
+
